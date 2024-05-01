@@ -9,13 +9,17 @@
 
     <!-- BOXICONS LINK -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Task 1</title>
+    <title>Task 3</title>
 </head>
 
 <body class="bg-slate-100">
     <a href="./../index.html" class="relative top-[20px] left-[200px] font-[700] text-[16px] text-red-700">Home</a>
     <main class="container mt-[12%]">
-        <textarea class="ml-[50px] p-[10px] outline-none text-[16px" placeholder="Enter words" id="" cols="50" rows="5" ></textarea>
+        <h2 id="words-l" class="hidden ml-[100px]"><b id="lengthi"></b>  ta so'z mavjud</h2>
+        <form action="" onsubmit="create(event)">
+        <textarea id="textarea" class="ml-[100px] mt-[50px] rounded-[5px] p-[10px] outline-none text-[14px]" placeholder="Enter words" id="" cols="80" rows="10" ></textarea>
+        <button class="block p-[5px] ml-[667px] text-[#fff] bg-[#000000]" type="submit">OK</button>
+    </form>
     </main>
 </body>
 <script src="https://cdn.tailwindcss.com"></script>

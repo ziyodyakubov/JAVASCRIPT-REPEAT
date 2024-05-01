@@ -9,35 +9,37 @@
 
     <!-- BOXICONS LINK -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Task 1</title>
+    <title>Task 2</title>
 </head>
 
 <body class="bg-slate-100">
     <a href="./../index.html" class="relative top-[20px] left-[200px] font-[700] text-[16px] text-red-700">Home</a>
     <main class="container mt-[12%] ml-[200px]">
-        <div class="result-wrapper flex gap-[250px] items-center">
-            <form action="" class="flex flex-col gap-[20px]">
+        <div class="result-wrapper flex gap-[250px]">
+            <form action="" class="flex flex-col gap-[20px]" onsubmit="create(event)">
                 <div class="width-h flex items-center gap-[40px]">
+
                     <label class="flex flex-col gap-[2px]">
                         <small class="text-[#7c7c7c]">Width</small>
-                        <input type="number" class="outline-none rounded-[3px] border-[1px] border-[#00000066]">
+                        <input type="number" id="width" class="outline-none rounded-[3px] border-[1px] border-[#00000066]">
                     </label>
 
                     <label class="flex flex-col gap-[2px]">
                         <small class="text-[#7c7c7c]">Height</small>
-                        <input type="number" class="outline-none rounded-[3px] border-[1px] border-[#00000066]">
+                        <input type="number" id="height" class="outline-none rounded-[3px] border-[1px] border-[#00000066]">
                     </label>
                 </div>
 
                 <div class="radius-color flex items-center gap-[40px]">
+
                     <label class="flex flex-col gap-[2px]">
                         <small class="text-[#7c7c7c]">Radius</small>
-                        <input type="number" class="outline-none rounded-[3px] border-[1px] border-[#00000066]">
+                        <input type="number" id="radius" class="outline-none rounded-[3px] border-[1px] border-[#00000066]">
                     </label>
                     
                     <label class="flex flex-col gap-[2px]">
                         <small class="text-[#7c7c7c]">Color</small>
-                        <input type="text" class="outline-none rounded-[3px] border-[1px] border-[#00000066]">
+                        <input type="text" id="color" class="outline-none rounded-[3px] border-[1px] border-[#00000066]">
                     </label>
                 </div>
 
@@ -45,8 +47,8 @@
             </form>
 
         <div class="result">
-            <div class="result-card">
-                <h1>Hello World</h1>
+            <div id="result-card">
+                
             </div>
         </div>
     </div>
