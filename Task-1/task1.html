@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MAIN CSS LINK -->
+    <link rel="stylesheet" href="./../style.css">
+
+    <!-- BOXICONS LINK -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Task 1</title>
+</head>
+<body class="bg-slate-100">
+    <a href="./../index.html" class="relative top-[20px] left-[200px] font-[700] text-[16px] text-red-700">Home</a>
+    <main class="container mt-[12%]">
+        <form action="" class="flex flex-col gap-[20px] w-[300px] relative left-[38%]">
+            <h1 class="text-[36px] font-[500] text-center mb-[10px]">Log In</h1>
+            <label class="flex flex-col gap-[2px]">
+                <small class="text-[#999] cursor-pointer">Email</small>
+                <input type="email" id="email" class="bg-transparent w-[300px] py-[3px] border-b-[2px] border-b-[#999999c4] outline-none"">
+            </label>
+
+            <label class="flex flex-col gap-[2px]">
+                <small class="text-[#999] cursor-pointer">Password</small>
+                <div class="flex items-center align-top border-b-[2px] border-b-[#999999c4]">
+                    <input type="password" id="password" class="bg-transparent w-[300px] py-[3px] outline-none">
+                    <i id="eye" class='bx bxs-low-vision cursor-pointer text-[19px] text-[#999]'></i>
+                </div>
+            </label>
+
+            <button type="submit" id="submitBtn" class="bg-black rounded-[3px] text-white py-[5px] mt-[5px] active:bg-[#000] duration-150 hover:bg-[#000000bc] inline w-[300px]">LOG IN</button>
+        </form>
+    </main>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="./index.js"></script>
+</html>
