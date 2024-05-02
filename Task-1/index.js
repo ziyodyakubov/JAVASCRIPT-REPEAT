@@ -4,6 +4,7 @@ let eye = document.getElementById("eye");
 let submitBtn = document.getElementById("submitBtn");
 
 eye.addEventListener("click", () => {
+    eye.classList.toggle("bxs-show")
     if (password.type === "password") {
         password.type = "text";
     } else {
